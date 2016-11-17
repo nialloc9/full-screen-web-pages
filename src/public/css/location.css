@@ -1,0 +1,35 @@
+/* Remove scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  background: url(../resources/images/table.jpg) no-repeat center center fixed; /* */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.main-body{
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+.map{
+  max-width:400px;
+  height:400px;
+  background:black;
+  border: solid 3px black;
+}
+
+.location-description{
+  color: black;
+  font-family: cursive;
+  background-color: lightgrey;
+  opacity: 0.8;
+  padding: 30px;
+  border: solid 3px black;
+  min-height: 400px;
+}

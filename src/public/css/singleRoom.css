@@ -1,0 +1,32 @@
+/* Remove scroll bar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  background: url(../resources/images/singleRoom.jpg) no-repeat center center fixed; /* make background image stretch full screen, don't repeat the image, center the image, keep it in a fixed position */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.main-body{
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+
+.room-info-wrapper{
+  background-color: lightgray;
+  padding: 10px;
+  width: 400px;
+  opacity: 0.9;
+  border: solid 1px black;
+  font-family: cursive;
+}
+
+.room-info-wrapper ul li{
+  list-style: none;
+  margin-top: 8px;
+}

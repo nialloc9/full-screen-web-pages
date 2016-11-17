@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!-- Tells browser type of code. Also tells js the top of the page. -->
+<html>
+    <head>
+        <!-- FAVICON -- the image that appears in the tab of the browser.. created using logomakr.com -->
+        <link rel="icon" type="image/ico" href="logo.png">
+
+        <!-- META TAGS -->
+        <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!-- meta tags below are for web scraper tools like facebook that go over your webpage and take out the description for what appears when the website is shared on social media. Keywords is for the google bots that use these to help with making your site appear throught google search -->
+        <meta name="keywords" content="hotel killareny room" />
+        <meta property="og:description" content="Have a pleasent stay at the Killarney Hotel." />
+
+        <!-- TITLE -->
+        <title>Killarney Hotel</title>
+
+        <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- PAGE CUSTOM CSS -->
+        <link href="public/css/doubleSuite.css" type="text/css" rel="stylesheet"/>
+
+    </head>
+    <body>
+
+      <div class="site-wrapper">
+          <!-- NAV -->
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+             <div class="container-fluid">
+               <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                   <span class="sr-only">Toggle navigation</span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="index.html">Killarney Hotel</a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                 <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#contact" data-toggle="modal">Contact</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                   <li class="active"><a href="rooms.html">Rooms</a></li>
+                   <li><a href="location.html">Location</a></li>
+                 </ul>
+                 <form class="navbar-form navbar-right">
+                   <input type="text" class="form-control" placeholder="Search...">
+                 </form>
+               </div>
+             </div>
+           </nav>
+
+           <!-- CONTACT MODAL -->
+           <div class="modal fade" id="contact" role="dialog">
+              <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contact</h4>
+                  </div>
+                <div class="modal-body">
+                  <label for="name" class="col-sm-2 control-label">
+                    Name:
+                  </label>
+                  <div class="col-sm-8">
+                    <input type="text" name="name" maxlength="255" class="form-control" placeholder="John Smith."/>
+                  </div>
+                  <br><br>
+                  <label for="email" class="col-sm-2 control-label">
+                    Email:
+                  </label>
+                  <div class="col-sm-8">
+                    <input type="email" name="email" maxlength="255" class="form-control" placeholder="example@example.com."/>
+                  </div>
+                  <br><br>
+                  <label for="message" class="col-sm-2 control-label">
+                    Enquiry:
+                  </label>
+                  <div class="col-sm-8">
+                    <textarea name="message" maxlength="255" class="form-control" placeholder="Please write your enquiry here"></textarea>
+                  </div>
+                </div>
+
+                <br /><br /><br />
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-dismiss="modal">Send</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- MAIN BODY -->
+           <div class="main-body container">
+               <div class="row">
+                   <div class="col-sm-6">
+                       <!-- White space -->
+                   </div>
+
+                   <div class="room-info-wrapper col-sm-6">
+                       <div class="room-info">
+                           <p>
+                               For that getaway you have been waiting for...
+                           </p>
+
+                           <ul>
+                               <li>
+                                   Accomadates: Two
+                               </li>
+                               <li>
+                                   Bed Type: Double Bed
+                               </li>
+                               <li>
+                                   Breakfast included: Yes
+                               </li>
+                               <li>
+                                   Price(€): 220
+                               </li>
+                               <li>
+                                   <button class="btn btn-info">Book Now</button>
+                               </li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </div>
+
+      <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
